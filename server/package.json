@@ -4,7 +4,7 @@
   "description": "App to handle dispute between parties",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon --exec 'mocha 'tests/e2e/**/*.js''"
   },
   "repository": {
     "type": "git",
@@ -13,7 +13,13 @@
   "author": "Fabrice Yao",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.4",
-    "mongoose": "^4.11.9"
+    "body-parser": "1.17.2",
+    "express": "4.15.4",
+    "mongoose": "4.11.9"
+  },
+  "devDependencies": {
+    "mocha": "3.5.0",
+    "nodemon": "1.11.0",
+    "supertest": "3.0.0"
   }
 }
